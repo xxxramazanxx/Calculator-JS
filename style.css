@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #807ECE 0%, #8E7ECE 100%);
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calc-title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #EBEBEB;
+}
+
+.calc-box {
+    width: 360px;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #2D2A37;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 188px 52px rgba(0, 0, 0, 0.01), 0px 120px 48px rgba(0, 0, 0, 0.04), 0px 68px 41px rgba(0, 0, 0, 0.15), 0px 30px 30px rgba(0, 0, 0, 0.26), 0px 8px 17px rgba(0, 0, 0, 0.29), inset 0px 6px 8px rgba(255, 255, 255, 0.1), inset 0px -4px 5px rgba(0, 0, 0, 0.22);
+    border-radius: 48px;
+}
+
+.calc-out {
+    border: 1px solid #474646;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 50px;
+    width: 300px;
+    height: 90px;
+    margin-bottom: 25px;
+    color: #EBEBEB;
+    font-size: 42px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    overflow: hidden;
+}
+
+.calc-buttons {
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: repeat(4, 1fr);
+    color: #EBEBEB;
+}
+
+.btn {
+    height: 64px;
+    width: 64px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%), #2D2A37;
+    box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.01), 0px 7px 7px rgba(0, 0, 0, 0.04), 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.26), 0px 0px 2px rgba(0, 0, 0, 0.29), inset 0px 2px 3px rgba(255, 255, 255, 0.06);
+    border-radius: 999px;
+    text-align: center;
+    line-height: 64px;
+    font-size: 24px; 
+    transition: all 0.2s all;  
+    user-select: none
+}
+
+.btn:hover {
+    color: #975DFA;
+    transition: all 0.2s all;  
+}
+
+.btn--purple {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0.01%, rgba(255, 255, 255, 0.05) 100%), #462878;
+    box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.01), 0px 7px 7px rgba(0, 0, 0, 0.04), 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.26), 0px 0px 2px rgba(0, 0, 0, 0.29), inset 0px 2px 3px rgba(255, 255, 255, 0.1);
+}
